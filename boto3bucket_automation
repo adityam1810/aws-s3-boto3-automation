@@ -1,0 +1,19 @@
+import boto3
+
+s3 = boto3.resource("s3", region_name="us-east-2")
+
+def show_buckets(s3):
+    for bucket in s3.buckets.all():
+        print(bucket.name)
+
+def create_bucket(s3):
+    s3.create_bucket(
+        Bucket="python-boto-bucket",
+        CreateBucketConfiguration={
+            "LocationConstraint": "us-east-2"
+        }
+    )
+    print("Bucket created successfully")
+
+create_bucket(s3)
+show_buckets(s3)
