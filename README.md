@@ -55,6 +55,9 @@ Provide your:
 ```bash
 python s3_bucket.py
 ```
+#Here is the backup
+
+<img width="1366" height="542" alt="Screenshot (356)" src="https://github.com/user-attachments/assets/b9f2ef79-87df-471b-9e1b-6de79cd7fa10" />
 
 ## What I Learned
 
